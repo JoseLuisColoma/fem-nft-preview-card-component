@@ -3,31 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="c-body">
+  <div class="c-main">
+    <div>
+      <img class="c-img-nft "src="./images/image-equilibrium.jpg" alt="imagem NFT"/>
+    </div>
+    <div class="c-info">
+      <div class="c-info__titulo" ><a class="c-info__link" href="#">Equilibrium #3429</a></div>
 
-  Equilibrium #3429
+      <p class="c-info__descripcion">Our Equilibrium collection promotes <br> balance and calm.</p>
 
-  Our Equilibrium collection promotes balance and calm.
+      <div class="c-valor">
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+          <p class="c-valor__precio"><img src="./images/icon-ethereum.svg" class="c-valor__img" icono ethereum">  0.041 ETH</p>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <p class="c-valor__tiempo"><img class="c-reloj" src="./images/icon-clock.svg" alt="imagem relógio">3 days left</p>
+
+      </div>
+
+      <div class="c-creacion">
+          <p class="c-creacion__creador">
+              <img class="c-creacion__avatar" src="./images/image-avatar.png" alt="foto-avatar">
+              Creation of <a class="c-creacion__nombre" href="#">Jules Wyvern</a>
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="c-developer">
+    <p class="c-developer__text">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener" class="c-developer__link">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/JoseLuisColoma" target="_blank" rel="noopener" class="c-developer__link c-developer__link--jocotev">jocodev</a>.
+    </p>
   </div>
 </body>
 </html>
